@@ -52,6 +52,7 @@ contain valid denominations. Accounts may optionally be supplied with vesting pa
 
 			addr, err := sdk.AccAddressFromBech32(args[0])
 			if err != nil {
+				fmt.Println(err)
 				inBuf := bufio.NewReader(cmd.InOrStdin())
 				keyringBackend, err := cmd.Flags().GetString(flags.FlagKeyringBackend)
 				if err != nil {
