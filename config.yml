@@ -1,9 +1,8 @@
 version: 1
 accounts:
   - name: alice
+    address: spnt4jkut0yfnsmqle9vxk3adfwwm9vj9gsj98vqf
     coins: ["20000token", "200000000stake"]
-  - name: bob
-    coins: ["10000token", "100000000stake"]
 validators:
   - name: alice
     bonded: "100000000stake"
