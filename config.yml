@@ -6,6 +6,26 @@ accounts:
 validators:
   - name: alice
     bonded: "100000000stake"
+genesis:
+  app_state:
+    bank:
+      denom_metadata:
+      - base: uspn
+        denom_units:
+        - aliases:
+          - microspn
+          denom: uspn
+          exponent: "0"
+        - aliases:
+          - millispn
+          denom: mspn
+          exponent: "3"
+        - denom: spn
+          exponent: "6"
+        description: The native staking token of Starport Network
+        display: spn
+        name: Starport Network
+        symbol: SPN
 client:
   openapi:
     path: "docs/static/openapi.yml"
